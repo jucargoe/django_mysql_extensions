@@ -2,7 +2,7 @@ import pathlib
 from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 PACKAGE_NAME = 'django_mysql_extensions'
 AUTHOR = 'Elio & JC'
 AUTHOR_EMAIL = 'django.mysql.extensions@gmail.com'
@@ -11,7 +11,7 @@ LICENSE = 'MIT'
 DESCRIPTION = 'Library for use MySQL functions not supported by Django'
 LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-8')
 LONG_DESC_TYPE = "text/markdown"
-INSTALL_REQUIRES = []
+INSTALL_REQUIRES = ['django']
 
 setup(
     name=PACKAGE_NAME,
